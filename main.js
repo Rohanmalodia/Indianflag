@@ -111,7 +111,7 @@ function main() {
 function init_faceFilter(videoSettings){
   JEELIZFACEFILTER.init({
     canvasId: 'jeeFaceFilterCanvas',
-    NNCPath: '../../../neuralNets/', // path of NN_DEFAULT.json file
+    NNCPath: './neuralNets/', // path of NN_DEFAULT.json file
     videoSettings: videoSettings,
     callbackReady: function (errCode, spec) {
       if (errCode) {
