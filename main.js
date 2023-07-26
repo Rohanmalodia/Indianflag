@@ -24,13 +24,13 @@ function init_threeScene(spec) {
         map: new THREE.TextureLoader().load('./models/football_makeup/texture.png'),
         alphaMap: new THREE.TextureLoader().load('./models/football_makeup/alpha_map_256.png'),
         transparent: true,
-        opacity: 0.6
+        opacity: 0.9
       });
 
       const faceMesh = new THREE.Mesh(geometry, mat);
       faceMesh.position.y += 0.00;
-      faceMesh.position.z -= 0.75;
-      faceMesh.position.x += 0.1;
+      faceMesh.position.z -= 0.50;
+      faceMesh.position.x -= 0.1;
 
       addDragEventListener(faceMesh);
 
