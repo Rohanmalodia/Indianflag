@@ -28,8 +28,8 @@ function init_threeScene(spec) {
       });
 
       const faceMesh = new THREE.Mesh(geometry, mat);
-      faceMesh.position.y += 0.0;
-      faceMesh.position.z -= 0.25;
+      faceMesh.position.y += 0.50;
+      faceMesh.position.z -= 0.50;
 
       addDragEventListener(faceMesh);
 
